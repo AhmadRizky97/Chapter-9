@@ -1,6 +1,10 @@
 import { Button, Row, Card, CardBody, CardTitle, CardSubtitle, CardText, Form, FormGroup, Label, Input} from 'reactstrap';
 
 function Login () {
+
+  return (
+
+  
     <Row className='login-container align-items-center'>
        <Card>
         <CardBody>
@@ -32,6 +36,7 @@ function Login () {
         </CardBody>
         </Card>
       </Row>
+  )
 }
 
 
