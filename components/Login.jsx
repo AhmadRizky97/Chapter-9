@@ -1,12 +1,7 @@
-import React from 'react';
-import { Button, Container, Row, Card, CardBody, CardTitle, CardSubtitle, CardText, Form, FormGroup, Label, Input} from 'reactstrap';
-import './App.css';
+import { Button, Row, Card, CardBody, CardTitle, CardSubtitle, CardText, Form, FormGroup, Label, Input} from 'reactstrap';
 
-
-function App() {
-  return (
-    <Container className='flex'>
-      <Row className='login-container align-items-center'>
+function Login () {
+    <Row className='login-container align-items-center'>
        <Card>
         <CardBody>
         <CardTitle tag="h5">
@@ -37,8 +32,7 @@ function App() {
         </CardBody>
         </Card>
       </Row>
-    </Container>
-  );
 }
 
-export default App;
+
+export default Login
