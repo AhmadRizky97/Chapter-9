@@ -1,4 +1,5 @@
-import { Button, Row, Card, CardBody, CardTitle, CardSubtitle, CardText, Form, FormGroup, Label, Input} from 'reactstrap';
+import { Button, Row, Card, CardBody, CardTitle, CardSubtitle, Form, FormGroup, Label, Input} from 'reactstrap';
+import {Link} from 'react-router-dom'
 
 function Login () {
 
@@ -14,7 +15,6 @@ function Login () {
         <CardSubtitle className="mb-2 text-muted" tag="h6">
         Please insert your email and password to login
         </CardSubtitle>
-        <CardText>
           <Form>
             <FormGroup>
               <Label>Email</Label>
@@ -25,14 +25,12 @@ function Login () {
               <Input id="password" placeholder="password" type="password"/>
             </FormGroup>
             <p>
-             Register <a href="/register">here</a> for new account
+             Register <Link to="/register">here</Link> for new account
             </p>
             <Button>
               Login
             </Button>
-          </Form>
-        </CardText>
-        
+          </Form>        
         </CardBody>
         </Card>
       </Row>
